@@ -1,14 +1,12 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
-import adapter from 'webrtc-adapter';
 
 function App() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
       const res = await fetch('/api/peers');
-      // const newDate = await res.text();
       setDate(await res.text());
     }
     getDate();
