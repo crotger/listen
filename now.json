@@ -1,6 +1,6 @@
 {
 	"redirects": [
-		{ "source": "/auth", "destination": "https://accounts.spotify.com/authorize?client_id=48d99522e09549e588257afffb268c1a&redirect_uri=https:%2F%2Flisten.carlosrotger.now.sh%2Fcallback&scope=user-read-private%20user-read-email&response_type=token&state=123" },
+		{ "source": "/auth", "destination": "https://accounts.spotify.com/authorize?client_id=48d99522e09549e588257afffb268c1a&redirect_uri=https:%2F%2Flisten.carlosrotger.now.sh%2Fcallback&scope=user-read-private%20user-read-email&response_type=token&state=123", "statusCode": 302 },
 		{ "source": "/callback", "destination": "/" }
 	]
 }
